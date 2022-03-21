@@ -1,0 +1,11 @@
+body {
+  color: #ffffff;
+  background-image: url('bg.jpeg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: purple;
+}
+* {
+  text-align: center;
+  font-size: 30px;
+}
