@@ -1,0 +1,64 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: Purple;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: White;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: Blue;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+body {
+    color: #ffffff;
+    background-image: url('bg.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: purple;
+}
+* {
+    font-size: 30px;
+    font-family: 'Mulish', sans-serif;
+}
+p {
+  width: 35px;
+  height: 5px;
+  background-color: Black;
+  margin: 6px 0;
+}
+.icon {
+  border: 2px solid Purple;
+  width: 36px;
+  height: 37px;
+  padding: 2px;
+  background-color: Purple;
+  border-radius: 10px;
+}

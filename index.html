@@ -2,25 +2,33 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style type="text/css" media="all">
-    body {
-      color: #ffffff;
-      background-image: url('bg.jpeg');
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-color: purple;
-    }
-    * {
-      text-align: center;
-      font-size: 30px;
-    }
-    </style>
-    <title>Ramadhan-Countdown</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/33e1782442.js" crossorigin="anonymous"></script>
+    <title>Ramadhan Countdown</title>
   </head>
   <body>
-    <h1>Ramadhan Countdown</h1><br>
-      <h2>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#"><i class="fa-solid fa-address-card"></i> About</a>
+      <a href="#"><i class="fa-solid fa-book"></i> Al-Quran</a>
+      <a href="#"><i class="fa-regular fa-clock"></i> Countdown</a>
+      <a href="https://wa.me/62895605887712?text=Min%20webnya%20error......"><i class="fa-solid fa-address-book"></i> Contact Me</a><br><br><br><br><br><br><br><br><br>
+      <footer style="text-align: center;">
+        <span style="font-size : 15px;">Created By Ibrah</span>
+      </footer>
+    </div>
+    <div id="main">
+      <div class="icon">
+        <p onclick="openNav()"></p>
+        <p onclick="openNav()"></p>
+        <p onclick="openNav()"></p>
+      </div>
+    </div>
+      <h1 style="text-align: center;">Ramadhan Countdown</h1>
+      <h2 style="text-align: center;"><br>
         <span id="Hari"></span><br>
         <span id="Jam"></span><br>
         <span id="Menit"></span><br>
@@ -28,25 +36,7 @@
         <span id="all"></span><br>
         <span id="count"></span>
       </h2>
-    <script>
-    var countDownDate = new Date("Apr 2, 2022 :00:00").getTime();
-    var x = setInterval(function() {
-      var now = new Date().getTime();
-      var distance = countDownDate - now;
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      document.getElementById("Hari").innerHTML = days + " Hari";
-      document.getElementById("Jam").innerHTML = hours + " Jam";
-      document.getElementById("Menit").innerHTML = minutes + " Menit";
-      document.getElementById("Detik").innerHTML = seconds + " Detik";
-      document.getElementById("all").innerHTML = days + " : " + hours + " : " + minutes + " : " + seconds;
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("count").innerHTML = "Ramadhan Sudah Di Mulai! Selamat Menunaikan Ibadah Puasa:)";
-      }
-    }, 1000);
-    </script>
+    </div>
+    <script src="app.js" charset="utf-8"></script>
   </body>
 </html>
